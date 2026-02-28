@@ -143,7 +143,7 @@ I am a B.Tech Computer Science & Engineering student at Lovely Professional Univ
 - **LinkedIn:** [Mansi Tyagi](https://www.linkedin.com/in/mansi-tyagi-16a90425a)
 - **GitHub:** [@mansityagi01](https://github.com/mansityagi01)
 - **LeetCode:** [@Mansi_Tyagi](https://leetcode.com/u/Mansi_Tyagi)
-- **Email:** mansityagi2610@gmail.com
+- **Email:** mansityagi472@gmail.com
 
 ## 📄 License
 
