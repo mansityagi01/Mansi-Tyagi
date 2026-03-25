@@ -52,7 +52,7 @@ export default function Hero() {
             }`}
           >
             <h2 className="text-xl md:text-2xl text-gray-200 font-normal">
-              Machine Learning Engineer | Data Scientist | Full-Stack Developer
+              Machine Learning & Data Science Enthusiast | Full Stack Developer
             </h2>
           </div>
 
@@ -81,12 +81,13 @@ export default function Hero() {
             >
               View My Work
             </button>
-            <button
-              onClick={() => scrollToSection('contact')}
+            <a
+              href="/LPU_format_Updated_Resume.pdf?v=20260325"
+              download="Mansi_Tyagi_Resume.pdf"
               className="px-8 py-3 border border-[#7C8896] text-[#F1F5F9] rounded-lg transition-all duration-300 hover:border-[#93C5FD] hover:shadow-[0_0_20px_rgba(147,197,253,0.3)] hover:bg-[#93C5FD]/5"
             >
-              Contact Me
-            </button>
+              Download Resume
+            </a>
           </div>
         </div>
 

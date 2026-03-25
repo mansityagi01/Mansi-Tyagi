@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
-import { Code2, Layers, Wrench, Brain } from 'lucide-react';
+import { Code2, Layers, Wrench, Brain, Users } from 'lucide-react';
 
 export default function Skills() {
   const [isVisible, setIsVisible] = useState(false);
@@ -47,6 +47,7 @@ export default function Skills() {
       skills: [
         'Git',
         'GitHub',
+        'MongoDB',
         'Power BI',
         'Tableau',
         'Excel',
@@ -59,13 +60,27 @@ export default function Skills() {
       title: 'Core Concepts',
       icon: Brain,
       skills: [
-        'Data Structures & Algorithms (800+ LeetCode problems solved)',
+        'Data Structures & Algorithms (934+ LeetCode problems solved)',
         'Machine Learning',
+        'Agentic AI',
+        'Software Testing',
         'Statistical Modeling',
         'OOP',
         'DBMS',
       ],
     },
+  ];
+
+  const softSkills = [
+    'Problem Solving',
+    'Analytical Thinking',
+    'Communication',
+    'Teamwork',
+    'Leadership',
+    'Adaptability',
+    'Time Management',
+    'Attention to Detail',
+    'Ownership Mindset',
   ];
 
   return (
@@ -80,9 +95,12 @@ export default function Skills() {
             isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
           }`}
         >
-          <h2 className="text-4xl md:text-5xl font-semibold text-[#F1F5F9] mb-16">
-            Technical Skills
+          <h2 className="text-4xl md:text-5xl font-semibold text-[#F1F5F9] mb-10">
+            Skills
           </h2>
+          <h3 className="text-2xl md:text-3xl font-semibold text-[#F1F5F9] mb-8">
+            Technical Skills
+          </h3>
         </div>
 
         <div className="grid md:grid-cols-2 gap-8">
@@ -120,6 +138,42 @@ export default function Skills() {
               </div>
             );
           })}
+        </div>
+
+        <h3
+          className={`text-2xl md:text-3xl font-semibold text-[#F1F5F9] mt-12 mb-8 transform transition-all duration-700 ${
+            isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
+          }`}
+          style={{ transitionDelay: '450ms' }}
+        >
+          Soft Skills
+        </h3>
+
+        <div
+          className={`mt-10 group bg-gradient-to-br from-white/[0.07] to-white/[0.02] border border-white/10 rounded-2xl p-8 transform transition-all duration-700 hover:-translate-y-2 hover:border-white/30 hover:shadow-[0_0_50px_rgba(255,255,255,0.15),inset_0_0_20px_rgba(255,255,255,0.05)] backdrop-blur-sm ${
+            isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
+          }`}
+          style={{ transitionDelay: '500ms' }}
+        >
+          <div className="flex items-center gap-4 mb-6">
+            <div className="p-3 bg-white/10 rounded-xl group-hover:bg-white/20 group-hover:shadow-[0_0_25px_rgba(255,255,255,0.3)] transition-all duration-500 group-hover:scale-110">
+              <Users className="w-7 h-7 text-white transition-transform group-hover:rotate-12" />
+            </div>
+            <h4 className="text-xl font-semibold text-white group-hover:text-white/90 transition-colors">
+              Professional Strengths
+            </h4>
+          </div>
+
+          <div className="flex flex-wrap gap-2">
+            {softSkills.map((skill, skillIndex) => (
+              <span
+                key={skillIndex}
+                className="px-4 py-2 bg-white/5 border border-white/20 rounded-lg text-sm text-gray-200 transition-all duration-300 hover:border-white/50 hover:bg-white/10 hover:shadow-[0_0_15px_rgba(255,255,255,0.2)] hover:scale-105 hover:text-white cursor-default"
+              >
+                {skill}
+              </span>
+            ))}
+          </div>
         </div>
       </div>
     </section>
